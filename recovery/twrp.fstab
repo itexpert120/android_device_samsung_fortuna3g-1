@@ -1,6 +1,6 @@
 #device    mount point  	fstype                                        	[device2] [length=]
 /efs	      ext4		/dev/block/bootdevice/by-name/efs
-/system	      ext4		/dev/block/bootdevice/by-name/system
+/system	      ext4		/dev/block/bootdevice/by-name/system    	flags=backup=1
 /cache	      ext4		/dev/block/bootdevice/by-name/cache
 /data	      ext4		/dev/block/bootdevice/by-name/userdata		length=-16384
 /boot         emmc      	/dev/block/bootdevice/by-name/boot
