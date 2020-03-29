@@ -1,12 +1,12 @@
-#device    mount point  fstype                                        [device2] [length=]
-/efs		      ext4		  /dev/block/bootdevice/by-name/efs
-/system		    ext4		  /dev/block/bootdevice/by-name/system
-/cache		    ext4		  /dev/block/bootdevice/by-name/cache
-/data		      ext4		  /dev/block/bootdevice/by-name/userdata		    length=-16384
-/boot         emmc      /dev/block/bootdevice/by-name/boot
-/recovery     emmc      /dev/block/bootdevice/by-name/recovery
-/preload	    ext4		  /dev/block/bootdevice/by-name/hidden
-/modem	    	emmc		  /dev/block/bootdevice/by-name/apnhlos
-/mdm		      emmc		  /dev/block/bootdevice/by-name/modem
-/external_sd	auto		  /dev/block/mmcblk1p1	/dev/block/mmcblk1	    flags=display="External SDcard";storage;wipeingui;removable;backup=0
-/usbotg	    	auto    	/dev/block/sda1		    /dev/block/sda		      flags=display="Usb-Otg";storage;removable;backup=0
+#device    mount point  	fstype                                        	[device2] [length=]
+/efs	      ext4		/dev/block/bootdevice/by-name/efs
+/system	      ext4		/dev/block/bootdevice/by-name/system
+/cache	      ext4		/dev/block/bootdevice/by-name/cache
+/data	      ext4		/dev/block/bootdevice/by-name/userdata		length=-16384
+/boot         emmc      	/dev/block/bootdevice/by-name/boot
+/recovery     emmc      	/dev/block/bootdevice/by-name/recovery
+/preload      ext4		/dev/block/bootdevice/by-name/hidden
+/modem	      emmc		/dev/block/bootdevice/by-name/apnhlos
+/mdm	      emmc		/dev/block/bootdevice/by-name/modem
+/external_sd  auto		/dev/block/mmcblk1p1	/dev/block/mmcblk1	flags=display="External SDcard";storage;wipeingui;removable;backup=0
+/usbotg	      auto    		/dev/block/sda1		/dev/block/sda		flags=display="Usb-Otg";storage;removable;backup=0
