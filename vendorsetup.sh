@@ -1,5 +1,5 @@
 #
-# Copyright 2014 The Android Open Source Project
+# Copyright 2020 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,5 +14,6 @@
 # limitations under the License.
 #
 
-add_lunch_combo omni_fortuna3g-eng
-add_lunch_combo omni_fortunave3g-eng
+for i in fortuna3g fortunave3g; do
+  add_lunch_combo omni_${i}-eng
+done
