@@ -17,9 +17,9 @@ TARGET_CPU_VARIANT := cortex-a53
 BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 2048
-BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x80008000 --ramdisk_offset 0x81000000 --dt device/samsung/fortuna3g/dt.img --tags_offset 0x80000100
+BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x80008000 --ramdisk_offset 0x81000000 --dt device/samsung/fortunaxx3g/dt.img --tags_offset 0x80000100
 BOARD_KERNEL_SEPARATED_DT := true
-TARGET_PREBUILT_KERNEL := device/samsung/fortuna3g/kernel
+TARGET_PREBUILT_KERNEL := device/samsung/fortunaxx3g/kernel
 
 # Partition info
 TARGET_USERIMAGES_USE_EXT4 := true
@@ -45,7 +45,7 @@ TARGET_RECOVERY_QCOM_RTC_FIX := true
 
 # TWRP
 TW_THEME := portrait_hdpi
-TARGET_RECOVERY_FSTAB := device/samsung/fortuna3g/recovery/twrp.fstab
+TARGET_RECOVERY_FSTAB := device/samsung/fortunaxx3g/recovery/twrp.fstab
 TW_INCLUDE_CRYPTO := true
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 TARGET_RECOVERY_PIXEL_FORMAT := RGBA_8888
