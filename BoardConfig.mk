@@ -15,6 +15,10 @@
 #
 ##
 
+# LZMA compression for recovery's & kernel ramdisk....
+BOARD_CUSTOM_BOOTIMG_MK 		  := device/samsung/fortunaxx3g/custombootimg.mk
+BOARD_CANT_BUILD_RECOVERY_FROM_BOOT_PATCH := true
+
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME :=	MSM8916
 TARGET_NO_BOOTLOADER 	     := true
