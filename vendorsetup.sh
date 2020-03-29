@@ -15,4 +15,4 @@
 #
 
 add_lunch_combo omni_fortuna3g-eng
-
+add_lunch_combo omni_fortunave3g-eng
